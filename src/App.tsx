@@ -38,10 +38,10 @@ export default function App() {
 
       <section id="top" className="hero section">
         <motion.div className="hero-copy" initial="hidden" animate="visible" variants={rise} transition={{ duration: 0.65 }}>
-          <div className="status-chip"><span /> Open to Backend / Product Engineering roles</div>
+          <div className="status-chip"><span /> Open to Backend / Software Engineering roles</div>
           <p className="eyebrow">Backend / AI Systems / Cloud / IoT / DSA</p>
           <h1>{profile.name}</h1>
-          <h3>Building reliable backend products with AI workflows and cloud-ready dashboards.</h3>
+          <h3>Backend-focused CSE student building AI, cloud, and IoT projects.</h3>
           <p className="hero-text">{profile.tagline} I am aiming for serious engineering roles at product companies by showing deployed projects, clean architecture, DSA consistency, and a clear backend roadmap.</p>
           <div className="hero-actions">
             <a className="primary-btn" href="#projects"><Rocket size={18} /> Explore Projects</a>
@@ -73,10 +73,10 @@ export default function App() {
       </section>
 
       <section id="about" className="section about-section">
-        <SectionHeading eyebrow="About" title="A student profile rebuilt like a product-engineer portfolio." copy="The portfolio now highlights deployed systems, architecture, impact, and backend direction instead of only listing projects." />
+        <SectionHeading eyebrow="About" title="Backend-focused student with hands-on project experience." copy="A concise overview of my education, current strengths, internships, and direction toward backend software engineering." />
         <div className="about-grid">
           <div className="about-card glass large-card">
-            <h4>Engineering Positioning</h4>
+            <h4>Engineering Focus</h4>
             <p>Final-year B.E. Computer Science and Engineering student at PSG Institute of Technology and Applied Research with hands-on experience in Flask backends, AI workflows, IoT dashboards, databases, cloud deployment, and DSA practice.</p>
           </div>
           <div className="about-card glass">
@@ -94,7 +94,7 @@ export default function App() {
       </section>
 
       <section id="skills" className="section">
-        <SectionHeading eyebrow="Skills" title="Backend-first stack, supported by AI, cloud, and practical project delivery." />
+        <SectionHeading eyebrow="Skills" title="Backend, AI, cloud, and core CS skills used across projects." />
         <div className="skills-grid">
           {skills.map(({ group, icon: Icon, items, level }) => (
             <motion.div className="skill-card glass" key={group} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={rise}>
@@ -107,7 +107,7 @@ export default function App() {
       </section>
 
       <section id="experience" className="section timeline-section">
-        <SectionHeading eyebrow="Experience" title="Experience presented as engineering impact, not internship lines." />
+        <SectionHeading eyebrow="Experience" title="Internships and practical learning experience." />
         <div className="timeline">
           {experiences.map((exp, index) => (
             <motion.article className="timeline-card glass" key={exp.role} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.25 }} variants={rise} transition={{ delay: index * 0.08 }}>
@@ -124,7 +124,7 @@ export default function App() {
       </section>
 
       <section id="projects" className="section">
-        <SectionHeading eyebrow="Projects" title="Real live demos, real GitHub profile, and product-style project storytelling." copy="Each card now shows what the project does, how it is built, what was hard, and what comes next." />
+        <SectionHeading eyebrow="Projects" title="Selected projects with demos, code, and technical details." copy="Each card explains what the project does, how it is built, the main features, challenges, and possible next improvements." />
         <div className="projects-grid">
           {projects.map((project, index) => {
             const Icon = project.icon;
@@ -160,7 +160,7 @@ export default function App() {
       </section>
 
       <section id="certificates" className="section certificates-section">
-        <SectionHeading eyebrow="Certificates" title="Certifications and verified learning proof, ready to expand." copy="Certificate cards are data-driven, so you can add PDF/image links from the public folder or external credential URLs." />
+        <SectionHeading eyebrow="Certificates" title="Certifications, internships, and course completion proof." copy="A verified collection of certificates linked directly from the portfolio." />
         <div className="certificates-grid">
           {certificates.map(({ title, issuer, date, category, credential, link, icon: Icon }, index) => (
             <motion.article className="certificate-card glass" key={title} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={rise} transition={{ delay: index * 0.05 }}>
@@ -186,14 +186,14 @@ export default function App() {
       </section>
 
       <section id="proof" className="section proof-section">
-        <SectionHeading eyebrow="Proof" title="Achievements, certifications, and coding consistency." />
+        <SectionHeading eyebrow="Proof" title="Achievements and participation highlights." />
         <div className="proof-grid">
           {achievements.map(({ title, icon: Icon }) => <div className="proof-card glass" key={title}><Icon /><span>{title}</span></div>)}
         </div>
       </section>
 
       <section id="github" className="section github-section">
-        <SectionHeading eyebrow="GitHub + Coding" title="Connected to your real public profiles." copy="This section now uses stable portfolio cards instead of external generated stat images that can load blank." />
+        <SectionHeading eyebrow="GitHub + Coding" title="Public code, coding practice, and project activity." copy="A stable summary of my GitHub work, main languages, backend stack, and LeetCode progress." />
         <div className="github-layout">
           <div className="github-card glass">
             <h3>GitHub: {profile.githubUser}</h3>
@@ -232,7 +232,7 @@ export default function App() {
       </section>
 
       <section id="contact" className="section contact-section">
-        <SectionHeading eyebrow="Contact" title="Ready for backend internships, product roles, and serious engineering projects." />
+        <SectionHeading eyebrow="Contact" title="Open to backend internships and entry-level software roles." />
         <div className="contact-card glass">
           <p>I am looking for opportunities where I can work on backend systems, AI-enabled products, cloud applications, databases, APIs, and distributed-systems learning.</p>
           <div className="contact-actions">
@@ -243,7 +243,7 @@ export default function App() {
         </div>
       </section>
 
-      <footer>Copyright 2026 {profile.name}. Built as a recruiter-facing software engineering portfolio.</footer>
+      <footer>Copyright 2026 {profile.name}. Built as a software engineering portfolio.</footer>
     </main>
   );
 }
