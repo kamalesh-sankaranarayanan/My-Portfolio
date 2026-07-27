@@ -206,7 +206,7 @@ export default function App() {
           <div className="leetcode-card glass">
             <h3>LeetCode Progress</h3>
             <div className="leetcode-stats">
-              <strong>227+</strong><span>problems solved across C++, C, and Python</span>
+              <strong>250+</strong><span>problems solved across C++, C, and Python</span>
             </div>
             <p>Strongest visible areas: arrays, hash tables, DFS, trees, dynamic programming, backtracking, strings, and two pointers.</p>
             <div className="leetcode-focus">
@@ -246,7 +246,7 @@ export default function App() {
           </div>
           <div>
             <strong>Coding practice</strong>
-            <span>227+ LeetCode problems with DSA focus</span>
+            <span>250+ LeetCode problems with DSA focus</span>
           </div>
         </div>
       </section>

@@ -36,7 +36,7 @@ export const navItems = ['About', 'Skills', 'Experience', 'Projects', 'Certifica
 
 export const heroStats = [
   { label: 'CGPA', value: '8.61' },
-  { label: 'LeetCode', value: '227+' },
+  { label: 'LeetCode', value: '250+' },
   { label: 'Offer', value: 'DSE' },
   { label: 'Repos', value: '9' }
 ];
