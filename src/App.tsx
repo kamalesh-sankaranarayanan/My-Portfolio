@@ -209,6 +209,26 @@ export default function App() {
               <strong>227+</strong><span>problems solved across C++, C, and Python</span>
             </div>
             <p>Strongest visible areas: arrays, hash tables, DFS, trees, dynamic programming, backtracking, strings, and two pointers.</p>
+            <div className="leetcode-focus">
+              {['Arrays', 'Hash Tables', 'Trees', 'DFS', 'DP', 'Backtracking', 'Strings', 'Two Pointers'].map((topic) => <Pill key={topic}>{topic}</Pill>)}
+            </div>
+            <a className="leetcode-profile-link" href={profile.leetcode} target="_blank" rel="noreferrer">
+              View LeetCode Profile <ExternalLink size={16} />
+            </a>
+          </div>
+        </div>
+        <div className="coding-practice-grid">
+          <div className="practice-card glass">
+            <strong>Consistency</strong>
+            <span>Regular DSA practice with solved problems visible on LeetCode.</span>
+          </div>
+          <div className="practice-card glass">
+            <strong>Languages Used</strong>
+            <span>C++, C, and Python for problem solving and implementation practice.</span>
+          </div>
+          <div className="practice-card glass">
+            <strong>Interview Focus</strong>
+            <span>Arrays, strings, trees, DFS, dynamic programming, and backtracking.</span>
           </div>
         </div>
         <div className="github-metrics glass">
