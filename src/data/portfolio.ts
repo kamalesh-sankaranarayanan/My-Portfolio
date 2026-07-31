@@ -10,6 +10,7 @@ import {
   Globe2,
   Laptop,
   Network,
+  Radio,
   Server,
   Sparkles,
   TerminalSquare,
@@ -22,7 +23,7 @@ export const profile = {
   name: 'Kamalesh Sankaranarayanan',
   title: 'Backend Software Engineer in progress',
   tagline:
-    'Final-year CSE student at PSG iTech building backend-first products across AI workflows, cloud dashboards, IoT systems, and practical database-backed applications.',
+    'Final-year CSE student at PSG iTech building backend-first products across AI workflows, cloud dashboards, IoT systems, adaptive streaming, and practical database-backed applications.',
   email: 'sankarkamalesh05@gmail.com',
   phone: '8072054044',
   github: 'https://github.com/kamalesh-sankaranarayanan',
@@ -38,15 +39,16 @@ export const heroStats = [
   { label: 'CGPA', value: '8.61' },
   { label: 'LeetCode', value: '250+' },
   { label: 'Offer', value: 'DSE' },
-  { label: 'Repos', value: '9' }
+  { label: 'Repos', value: '10' }
 ];
 
 export const skills = [
-  { group: 'Languages', icon: Code2, level: 82, items: ['C', 'C++', 'Python', 'JavaScript'] },
-  { group: 'Backend', icon: Server, level: 78, items: ['Flask', 'REST APIs', 'Authentication', 'Dashboards'] },
+  { group: 'Languages', icon: Code2, level: 84, items: ['C', 'C++', 'Python', 'Java', 'JavaScript', 'TypeScript'] },
+  { group: 'Backend', icon: Server, level: 80, items: ['Spring Boot', 'Flask', 'FastAPI', 'REST APIs', 'JWT Auth', 'RBAC'] },
   { group: 'AI Systems', icon: Brain, level: 75, items: ['LangGraph', 'Whisper', 'Hugging Face', 'OpenRouter', 'Prompt Engineering', 'LLMs'] },
-  { group: 'Databases', icon: Database, level: 72, items: ['MySQL', 'SQLite', 'Schema Design', 'Query Debugging'] },
-  { group: 'Cloud & Tools', icon: Cloud, level: 70, items: ['OCI', 'Firebase', 'Render', 'Git', 'GitHub', 'VS Code'] },
+  { group: 'Streaming Systems', icon: Radio, level: 72, items: ['FFmpeg', 'HLS', 'Adaptive Bitrate', 'ABR Experiments', 'Synthetic Traces'] },
+  { group: 'Databases', icon: Database, level: 74, items: ['PostgreSQL', 'MySQL', 'SQLite', 'Schema Design', 'Query Debugging'] },
+  { group: 'Cloud & Tools', icon: Cloud, level: 72, items: ['Docker', 'GitHub Actions', 'OCI', 'Firebase', 'Render', 'Git'] },
   { group: 'Learning Track', icon: Network, level: 68, items: ['Advanced Graphs', 'Dynamic Programming', 'System Design', 'Distributed Systems'] }
 ];
 
@@ -94,6 +96,22 @@ export const projects = [
     features: ['Transcription', 'Speaker analysis', 'Task extraction', 'Deadline detection', 'Priority detection', 'Progress tracking'],
     challenges: ['Long audio handling', 'Structured JSON reliability', 'Task deduplication', 'Clean dashboard state'],
     roadmap: ['Google Drive watcher', 'Calendar sync', 'Vector search', 'Role-based task ownership']
+  },
+  {
+    title: 'IntelliStream - Adaptive Video Streaming Research Platform',
+    category: 'Video Streaming + ABR Research',
+    icon: Radio,
+    live: '',
+    github: 'https://github.com/kamalesh-sankaranarayanan/IntelliStream',
+    status: 'Repo',
+    oneLiner: 'A full-stack adaptive streaming platform that transcodes videos into HLS renditions and compares ABR controllers under synthetic network traces.',
+    description:
+      'A research-focused streaming platform that combines a Java Spring Boot backend, React/TypeScript frontend, Python/FastAPI services, PostgreSQL storage, FFmpeg transcoding, and HLS media delivery to explore intelligent adaptive bitrate control.',
+    tech: ['Java', 'Spring Boot', 'React', 'TypeScript', 'Python', 'FastAPI', 'PostgreSQL', 'FFmpeg', 'HLS', 'Docker'],
+    architecture: ['Video upload', 'Async FFmpeg transcoding', 'Fragmented-MP4 HLS renditions', 'Authenticated media delivery', 'ABR experiment harness', 'GitHub Actions CI'],
+    features: ['Multi-resolution HLS streaming', 'Reactive and predictive ABR controllers', 'BOLA/MPC-inspired comparisons', 'JWT auth and RBAC', 'Video search and watch history', 'Docker Compose test setup'],
+    challenges: ['Adaptive bitrate stability', 'Buffering-risk prediction', 'Reliable video processing pipeline', 'Reproducible network-trace experiments'],
+    roadmap: ['Live deployment', 'More ABR strategies', 'Analytics dashboard', 'Improved streaming observability', 'Expanded trace library']
   },
   {
     title: 'MindCare AI - Depression Screening System',

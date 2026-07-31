@@ -39,9 +39,9 @@ export default function App() {
       <section id="top" className="hero section">
         <motion.div className="hero-copy" initial="hidden" animate="visible" variants={rise} transition={{ duration: 0.65 }}>
           <div className="status-chip"><span /> Open to Backend / Software Engineering roles</div>
-          <p className="eyebrow">Backend / AI Systems / Cloud / IoT / DSA</p>
+          <p className="eyebrow">Backend / AI Systems / Cloud / IoT / Streaming / DSA</p>
           <h1>{profile.name}</h1>
-          <h3>Backend-focused CSE student building AI, cloud, and IoT projects.</h3>
+          <h3>Backend-focused CSE student building AI, cloud, IoT, and adaptive streaming projects.</h3>
           <p className="hero-text">{profile.tagline} I am aiming for serious engineering roles at product companies by showing deployed projects, clean architecture, DSA consistency, and a clear backend roadmap.</p>
           <div className="hero-actions">
             <a className="primary-btn" href="#projects"><Rocket size={18} /> Explore Projects</a>
@@ -59,7 +59,7 @@ export default function App() {
           <pre>{`const kamalesh = {\n  role: "Backend Software Engineer",
   education: "PSG iTech - CSE - 8.73 CGPA",
   currentOffer: "Infosys DSE",
-  focus: ["DSA", "Backend APIs", "AI Workflows", "Cloud"],
+  focus: ["DSA", "Backend APIs", "AI Workflows", "Streaming"],
   nextLearning: ["System Design", "Distributed Systems"],
   mission: "ship useful products, not templates"
 };`}</pre>
@@ -81,7 +81,7 @@ export default function App() {
           </div>
           <div className="about-card glass">
             <h4>Target Role</h4>
-            <p>Backend Software Engineer with a long-term path toward distributed systems, cloud infrastructure, and practical AI-enabled products. Video infrastructure is a future learning interest, not something I currently claim as experience.</p>
+            <p>Backend Software Engineer with a long-term path toward distributed systems, cloud infrastructure, practical AI-enabled products, and media infrastructure. IntelliStream is my current proof of adaptive streaming and ABR experimentation.</p>
           </div>
           <div className="about-card glass">
             <h4>Current Proof</h4>
@@ -197,7 +197,7 @@ export default function App() {
         <div className="github-layout">
           <div className="github-card glass">
             <h3>GitHub: {profile.githubUser}</h3>
-            <p>Public repositories include MindCare AI, IoT Water Monitoring, AQI Prediction, restaurant management, and additional engineering practice projects.</p>
+            <p>Public repositories include IntelliStream, MindCare AI, IoT Water Monitoring, AQI Prediction, restaurant management, and additional engineering practice projects.</p>
             <div className="profile-buttons">
               <a className="primary-btn" href={profile.github} target="_blank" rel="noreferrer">Open GitHub <ExternalLink size={16} /></a>
               <a className="secondary-btn" href={profile.leetcode} target="_blank" rel="noreferrer">Open LeetCode <ExternalLink size={16} /></a>
@@ -234,7 +234,7 @@ export default function App() {
         <div className="github-metrics glass">
           <div>
             <strong>Public work</strong>
-            <span>AI apps, IoT dashboards, ML dashboards, backend tools</span>
+            <span>Streaming systems, AI apps, IoT dashboards, ML dashboards, backend tools</span>
           </div>
           <div>
             <strong>Main languages</strong>
@@ -242,7 +242,7 @@ export default function App() {
           </div>
           <div>
             <strong>Backend stack</strong>
-            <span>Flask, REST APIs, SQLite, Firebase, Render</span>
+            <span>Spring Boot, FastAPI, Flask, PostgreSQL, Docker, REST APIs</span>
           </div>
           <div>
             <strong>Coding practice</strong>
@@ -254,7 +254,7 @@ export default function App() {
       <section id="contact" className="section contact-section">
         <SectionHeading eyebrow="Contact" title="Open to backend internships and entry-level software roles." />
         <div className="contact-card glass">
-          <p>I am looking for opportunities where I can work on backend systems, AI-enabled products, cloud applications, databases, APIs, and distributed-systems learning.</p>
+          <p>I am looking for opportunities where I can work on backend systems, AI-enabled products, cloud applications, databases, APIs, streaming systems, and distributed-systems learning.</p>
           <div className="contact-actions">
             <a className="primary-btn" href={`mailto:${profile.email}`}><Mail size={18} /> {profile.email}</a>
             <a className="secondary-btn" href={`tel:${profile.phone}`}><Phone size={18} /> {profile.phone}</a>
